@@ -5,5 +5,5 @@ import "ol/ol.css";
 import "./main.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!).render(
-  <MapApplication />
+  <MapApplication />,
 );
