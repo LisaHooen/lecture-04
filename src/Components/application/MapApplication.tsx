@@ -4,6 +4,7 @@ import TileLayer from "ol/layer/Tile";
 import { useGeographic } from "ol/proj";
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { OSM } from "ol/source";
+import KommuneLayerCheckbox from "../kommuner/KommuneLayerCheckbox";
 
 useGeographic();
 
@@ -35,12 +36,13 @@ const MapApplication = () => {
   return (
     <>
       <header>
-        <h1>hei</h1>
+        <h1>Norgeskart</h1>
       </header>
       <nav>
         <a href={"#"} onClick={handleFocusUser}>
           Focus on me
         </a>
+        <KommuneLayerCheckbox map={map} setLayers={setLayers} />
       </nav>
       <div ref={mapRef}>
         <h1></h1>
