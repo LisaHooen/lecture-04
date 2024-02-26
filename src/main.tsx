@@ -4,6 +4,6 @@ import MapApplication from "./Components/application/MapApplication";
 import "ol/ol.css";
 import "./main.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root")!).render(
-  <MapApplication />,
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <MapApplication />
 );
