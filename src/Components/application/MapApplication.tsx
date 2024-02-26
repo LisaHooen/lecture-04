@@ -37,6 +37,11 @@ const MapApplication = () => {
       <header>
         <h1>hei</h1>
       </header>
+      <nav>
+        <a href={"#"} onClick={handleFocusUser}>
+          Focus on me
+        </a>
+      </nav>
       <div ref={mapRef}>
         <h1></h1>
       </div>
