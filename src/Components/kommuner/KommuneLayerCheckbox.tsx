@@ -15,7 +15,7 @@ type KommuneFeature = Feature<Polygon> & {
 };
 
 const kommuneSource = new VectorSource<KommuneFeature>({
-  url: "lecture-04/public/kommuner.JSON",
+  url: "/lecture-04/public/kommuner.json",
   format: new GeoJSON(),
 });
 
